@@ -6,13 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-   <div style="width: 50px; height: 200px; background-color: blueviolet;"></div>
+   <div id="diagram"></div>
 </body>
 <script>
     let elem = document.createElement('div')
     elem.style.width = '50px'
     elem.style.height = '200px'
-    elem.style.backgroundColor = '8c91d01'
-    document.body.append(elem) = $0
+    elem.style.backgroundColor = 'red'
+    document.body.append(elem);
+    
+        let names = ['Москва', 'Рим','Париж'];
+        let population = [80000000, 500000, 70000 ];
+        
+        let diagram = document.getElementById('diagram')
+
+        let elem2 = document.createElement('div')
+        elem2.innerText = names[1];
+        diagram.append(elem2);
 </script>
+
 </html>
